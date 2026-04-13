@@ -69,8 +69,14 @@ docker-compose up -d
 
 ### 5. Access n8n
 
-- **Locally:** http://localhost:5678 *(requires adding `ports: ["5678:5678"]` to the n8n service in `docker-compose.yaml`; adjust if you've overridden `N8N_PORT`)*
 - **Externally (webhooks):** `https://your-domain.ngrok-free.app`
+
+> By default, n8n is not accessible at `localhost:5678` — no ports are exposed to the host. To enable local access, add the following to the `n8n` service in `docker-compose.yaml`:
+> ```yaml
+> ports:
+>   - "5678:5678"
+> ```
+> Then restart with `docker-compose up -d`.
 
 ---
 
