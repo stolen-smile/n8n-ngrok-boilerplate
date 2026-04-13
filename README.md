@@ -23,8 +23,8 @@ ngrok communicates with n8n using Docker's internal DNS (`n8n:5678`), not localh
 ### 1. Clone the repo
 
 ```bash
-git clone <your-repo-url>
-cd n8n
+git clone https://github.com/stolen-smile/n8n-ngrok-boilerplate.git
+cd n8n-ngrok-boilerplate
 ```
 
 ### 2. Create `.env`
