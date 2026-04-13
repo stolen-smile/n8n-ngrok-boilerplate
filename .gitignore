@@ -2,4 +2,5 @@
 /backup/
 
 /ngrok.yml
+.DS_Store
 /.env
